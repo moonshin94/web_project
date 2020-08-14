@@ -13,6 +13,9 @@ public class LabelDTO extends ThemeDTO  implements Serializable, FormDTO {
 	private String Label_7;
 	private String Label_8;
 	private String Label_9;
+	private String Label_10;
+	private String Label_11;
+	private String Label_12;
 	
 	public LabelDTO() {
 		super();
@@ -29,7 +32,7 @@ public class LabelDTO extends ThemeDTO  implements Serializable, FormDTO {
 
 
 	public LabelDTO(ThemeDTO themeDTO, String label_1, String label_2, String label_3, String label_4, String label_5,
-			String label_6, String label_7, String label_8, String label_9) {
+			String label_6, String label_7, String label_8, String label_9, String label_10, String label_11, String label_12) {
 		super();
 		this.themeDTO = themeDTO;
 		Label_1 = label_1;
@@ -41,6 +44,10 @@ public class LabelDTO extends ThemeDTO  implements Serializable, FormDTO {
 		Label_7 = label_7;
 		Label_8 = label_8;
 		Label_9 = label_9;
+		Label_10 = label_10;
+		Label_11 = label_11;
+		Label_12 = label_12;
+		
 	}
 
 
@@ -157,10 +164,33 @@ public class LabelDTO extends ThemeDTO  implements Serializable, FormDTO {
 		return Label_9;
 	}
 
+	public String getLabel_10() {
+		return Label_10;
+	}
+	
+	public String getLabel_11() {
+		return Label_11;
+	}
+	
+	public String getLabel_12() {
+		return Label_12;
+	}
 
 
 	public void setLabel_9(String label_9) {
 		Label_9 = label_9;
+	}
+	
+	public void setLabel_10(String label_10) {
+		Label_10 = label_10;
+	}
+	
+	public void setLabel_11(String label_11) {
+		Label_11 = label_11;
+	}
+	
+	public void setLabel_12(String label_12) {
+		Label_12 = label_12;
 	}
 
 
@@ -169,7 +199,8 @@ public class LabelDTO extends ThemeDTO  implements Serializable, FormDTO {
 	public String toString() {
 		return "LabelDTO [themeDTO=" + themeDTO + ", Label_1=" + Label_1 + ", Label_2=" + Label_2 + ", Label_3="
 				+ Label_3 + ", Label_4=" + Label_4 + ", Label_5=" + Label_5 + ", Label_6=" + Label_6 + ", Label_7="
-				+ Label_7 + ", Label_8=" + Label_8 + ", Label_9=" + Label_9 + "]";
+				+ Label_7 + ", Label_8=" + Label_8 + ", Label_9=" + Label_9 + ", Label_10=" + Label_10 + ", Label_11="
+						+ Label_11 + ", Label_12=" + Label_12 + "]";
 	}
 
 
